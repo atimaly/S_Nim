@@ -76,13 +76,13 @@ fn read_number() -> usize {
 
 fn main() {
 
-    println!("Add meg, hogy max mennyi kavics esetén szeretnéd látni a pozíciókat:");
+    println!("Specify the maximum number of stones for which you want to see the positions:");
     let n = read_number();
     //let s = vec![2,4,7];
     
-    println!("Add meg az S nagyságát:");
+    println!("Give the size of S:");
     let s_size = read_number();
-    println!("Add meg soronként S elemeit:");
+    println!("Enter the elements of S line by line:");
     
     
     let mut s = Vec::new();
@@ -92,6 +92,6 @@ fn main() {
     
     let mut Test = SNim::new(n+1, s);
     Test.calculate_states();
-    println!("Eredmény:");
+    println!("Result:");
     Test.print_states();
 }
